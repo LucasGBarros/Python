@@ -31,5 +31,3 @@ if r1 + r2 < r3 or r1 + r3 < r2 or r2 + r3 < r1:
 
 else:
     print('Os segmentos acima NÃO podem formar um triângulo.')
-
-
