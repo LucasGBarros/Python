@@ -26,17 +26,16 @@ opcões = int(input('Digite a Opção que deseja: '))
 
 if opcões == 1:
 
-    desc = produto - (produto * 10 / 100)
-
-    print('Pagando á VISTA, você ganha 10% de desconto. O valor do produto a ser pago agora é R$ {:.2f}'.format(desc))
+    total = produto - (produto * 10 / 100)
 
 elif opcões == 2:
 
-    desc = produto - (produto * 5 / 100)
+    total = produto - (produto * 5 / 100)
 
-    print('Pagando no DÉBITO, você ganha 5% de desconto. O valor do produto a ser pago agora é R$ {:.2f}'.format(desc))
 
 elif opcões == 3:
+
+    total = produto
 
     parcela = produto / 2
 
@@ -44,14 +43,14 @@ elif opcões == 3:
 
 elif opcões == 4:
 
+    total = produto + (produto * 20 / 100)
+
     parcelas = int(input('Quantas parcelas: '))
 
-    juros = produto + (produto * 20 / 100)
+    parceljuros = total / parcelas
 
-    div = juros / parcelas
+    print('Sua compra será parcelada em {:.0f}x de R$ {:.2f} COM JUROS.'.format(parcelas, parceljuros))
 
-    print('Sua compra será parcelada em {:.0f}x de R$ {:.2f} COM JUROS.'.format(parcelas, div))
-
-print('Sua compra de R$ {:.2f} vai custar R$ {:.2f} no final.'.format(produto,juros))
+print('Sua compra de R$ {:.2f} vai custar R$ {:.2f} no final.'.format(produto, total))
 
 print('{:=^40}'.format('VOLTE SEMPRE'))
