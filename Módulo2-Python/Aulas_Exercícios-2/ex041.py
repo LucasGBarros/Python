@@ -1,5 +1,5 @@
 print("""A confederação Nacional de Natação precisa de um programa que leia o ano de nascimento de um atleta
-e mostre sua categoria, de acord com a idade: 
+e mostre sua categoria, de acordo com a idade: 
 
 - Até \033[33m9 anos\033[m: \033[34mMIRIM\033[m.
 

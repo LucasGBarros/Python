@@ -1,4 +1,4 @@
-print("""Desenvolva uma lógica que leia o peso e a aultura de uma pessoa, calcule seu IMC e ostre seu sttatus,
+print("""Desenvolva uma lógica que leia o peso e a altura de uma pessoa, calcule seu IMC e ostre seu sttatus,
 de acordo com a tabela abaixo:
 
 - Abaixo de 18.5: abaixo do peso.
