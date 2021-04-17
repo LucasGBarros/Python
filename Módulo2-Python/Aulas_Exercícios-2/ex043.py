@@ -31,7 +31,7 @@ elif (imc >= 25) and (imc <= 30): # Ou podendo ser  "25 <= imc < 30"
 
     print('Seu índice de massa corporal é de {:.1f}. Você está Sobrepeso'.format(imc))
 
-elif (imc >= 30) and (imc <= 40): # Ou podendo ser "30 <= imc <40
+elif (imc >= 30) and (imc <= 40): # Ou podendo ser "30 <= imc < 40"
 
     print('Seu índice de massa corporal é de {:.1f}. Você está na Obesidade.'.format(imc))
 
