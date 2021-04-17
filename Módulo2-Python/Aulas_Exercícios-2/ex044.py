@@ -38,7 +38,9 @@ elif opcões == 2:
 
 elif opcões == 3:
 
-    print('Em 2x no CARTÃO DE CRÉDITOS não á descontos.')
+    parcela = produto / 2
+
+    print('Sua compra será parcelada em 2x de R$ {}.'.format(parcela))
 
 elif opcões == 4:
 
@@ -48,7 +50,8 @@ elif opcões == 4:
 
     div = juros / parcelas
 
-    print("""Sua compra será parcelada em {:.0f}x de R$ {:.2f} COM JUROS.
-    Sua compra de R$ {:.2f} vai custar R$ {:.2f} no final.""".format(parcelas, div, produto, juros))
+    print('Sua compra será parcelada em {:.0f}x de R$ {:.2f} COM JUROS.'.format(parcelas, div))
+
+print('Sua compra de R$ {:.2f} vai custar R$ {:.2f} no final.'.format(produto,juros))
 
 print('{:=^40}'.format('VOLTE SEMPRE'))
