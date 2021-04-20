@@ -2,6 +2,8 @@ print('Crie um programa que faça o computador jogar Jokenpô com você.')
 
 from random import randint
 
+from time import sleep
+
 itens = ('PEDRA', 'PAPEL', 'TESOURA')
 
 computador = randint(0, 2)
@@ -14,6 +16,15 @@ print('''Suas Jogadas:
 ''')
 
 jogador = int(input('Qual é a sua jogada? '))
+
+print('JO')
+sleep(1)
+
+print('KEN')
+sleep(1)
+
+print('PÔ!!!')
+sleep(1)
 
 print('=-'*25)
 
