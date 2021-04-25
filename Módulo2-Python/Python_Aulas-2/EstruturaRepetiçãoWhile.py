@@ -146,3 +146,11 @@ while n != 0:
             impar += 1
 
 print('você digitou {} números pares e {} impares'.format(par, impar))
+
+sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
+
+while sexo not in 'MmFf':           # A função NOT IN é "enquanto não for Mm Ff"
+
+    sexo = str(input('Dados inválidos. Informe novamente o seu sexo: ')).strip().upper()[0]
+
+print('Sexo {} registrado com sucesso.'.format(sexo  ))
