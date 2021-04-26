@@ -15,8 +15,6 @@ while aleatório != r:
 
 print('Parabéns, você acertou.')
 
-print('Você tentou {}x para acertar.'.format(aleatório))
-
 print('O computador escolheu o número: {}'.format(r))
 
 # Correção do execício.
