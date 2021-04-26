@@ -19,3 +19,37 @@ print('Você tentou {}x para acertar.'.format(aleatório))
 
 print('O computador escolheu o número: {}'.format(r))
 
+# Correção do execício.
+
+from random import randint
+
+comp = randint(0, 10)
+
+print('Olá, sou seu computador! Acabei de pensar em um número de 0 a 10.')
+
+print('Será que você consegue adivinhar qual foi? ')
+
+acertou = False
+
+tentativas = 0
+
+while not acertou:
+
+    jogador = int(input('Qual é seu palpite? '))
+
+    tentativas += 1
+
+    if jogador == comp:
+
+        acertou = True
+
+    else:
+        if jogador < comp:
+
+            print('Mais... Tente novamente.')
+
+        elif jogador > comp:
+
+            print('Menos... Tente novamente')
+
+print('Parabéns!!! Você acertou com {} tentativas.'.format(tentativas))
