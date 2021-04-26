@@ -147,6 +147,7 @@ while n != 0:
 
 print('você digitou {} números pares e {} impares'.format(par, impar))
 
+
 sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
 
 while sexo not in 'MmFf':           # A função NOT IN é "enquanto não for Mm Ff"
