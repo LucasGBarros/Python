@@ -64,7 +64,7 @@ while menu != 5:
 
     elif menu == 5:
 
-        sleep(2)
+        sleep(1)
 
         print('Finalizando...')
 
