@@ -42,6 +42,7 @@ while not acertou:
         acertou = True
 
     else:
+
         if jogador < comp:
 
             print('Mais... Tente novamente.')
