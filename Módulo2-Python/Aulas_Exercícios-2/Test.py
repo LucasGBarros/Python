@@ -1,4 +1,4 @@
-print('{:=^40}'.format(' APÊNDICE 1 '))
+print(f'{" APÊNDICE 1 ":=^40}')
 
 print('''
 PREENCHA O FORMULÁRIO
@@ -28,7 +28,7 @@ Em qual quadro se encaixa a sua idade?
 
     menu = int(input('Digite a sua opção: '))
 
-    if menu == 1:
+    if menu == 1 or menu == 2 or menu == 3 or menu == 4 or menu == 5 or menu == 6:      # Informando Quadro de Sexo
 
         print('''Ok, carregando informações...''')
 
@@ -37,89 +37,12 @@ Em qual quadro se encaixa a sua idade?
         sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
 
         while sexo not in 'MmFf':
+
             sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))
 
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
+        print(f'Sexo {sexo.upper()} registrado com sucesso.')
 
-        break
-
-
-    elif menu == 2:
-
-        print('Ok, carregando informações...')
-
-        sleep(2)
-
-        sexo = str(input('Informe seu Sexo: [M/F] ')).strip().upper()[0]
-
-        while sexo not in 'MmFf':
-            sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F]'))
-
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
-
-        break
-
-    elif menu == 3:
-
-        print('Ok, carregando informações...')
-
-        sleep(2)
-
-        sexo = str(input('Informe seu sexo: [M/N] ')).strip().upper()[0]
-
-        while sexo not in 'MmFf':
-            sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F]'))
-
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
-
-        break
-
-    elif menu == 4:
-
-        print('Ok, carregando informações...')
-
-        sleep(2)
-
-        sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
-
-        while sexo not in 'MmFf':
-            sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))
-
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
-
-        break
-
-    elif menu == 5:
-
-        print('Ok, carregando informações...')
-
-        sleep(2)
-
-        sexo = str(input('Informe seu sexo: [M/F]')).strip().upper()[0]
-
-        while sexo not in 'MmFf':
-            sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))
-
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
-
-        break
-
-    elif menu == 6:
-
-        print('Ok, carregando informações')
-
-        sleep(2)
-
-        sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]
-
-        while sexo not in 'MmFf':
-            sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))
-
-        print('Sexo {} registrado com sucesso.'.format(sexo.upper()))
-
-        break
-
-    elif menu == 7:
+    while menu != 7:     # Finalização do Quadro
 
         sleep(2)
 
@@ -127,17 +50,11 @@ Em qual quadro se encaixa a sua idade?
 
     else:
 
-        print('Opção Inválida! Tente novamente.')
+        print('Opção inválida! Tente novamente.')
+
+    break
+
 
 sleep(2)
 
-print('{:=^40}'.format(' Fim do Formulário! '))
-
-print('''
-Estado Civil:
-
-[1] Solteiro
-[2] Casado
-[3] Divorciado
-[4] Viúva(o)
-''')
+print('Programa Encerrado!')
