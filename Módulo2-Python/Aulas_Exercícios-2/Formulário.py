@@ -42,19 +42,17 @@ Em qual quadro se encaixa a sua idade?
 
         print(f'Sexo {sexo.upper()} registrado com sucesso.')
 
-    while menu != 7:     # Finalização do Quadro
+        break
 
-        sleep(2)
+    if menu != 7:
 
-        print('Finalizando...')
+        print('Opção inválida! Tente novamente!')
 
-    else:
 
-        print('Opção inválida! Tente novamente.')
+sleep(1.5)
 
-    break
-
+print('Finalizando...')
 
 sleep(2)
 
-print('Programa Encerrado!')
+print('Formulário Encerrado!')
