@@ -29,7 +29,7 @@ Em qual quadro se encaixa a sua idade?
 
         menu = int(input('Digite a sua opção: '))
 
-        if menu == 1 or menu == 2 or menu == 3 or menu == 4 or menu == 5 or menu == 6:      # Informando Quadro de Sexo
+        if menu == 1 or menu == 2 or menu == 3 or menu == 4 or menu == 5 or menu == 6:  # Informando Quadro de Sexo
 
             sleep(1)
 
@@ -37,11 +37,12 @@ Em qual quadro se encaixa a sua idade?
 
             sleep(2)
 
-            sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]    # Utilizando métodos de String e Fatiamento.
+            sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]  # Utilizando métodos de String e
+            # Fatiamento.
 
             while sexo not in 'MmFf':
 
-                sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] ')) # Informando sexo correto
+                sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))  # Informando sexo correto
 
             sleep(1)
 
@@ -49,7 +50,7 @@ Em qual quadro se encaixa a sua idade?
 
             break
 
-        elif menu != 6:   # Tentando novamente
+        elif menu != 6:  # Tentando novamente
 
             print('Opção inválida! Tente novamente!')
 
@@ -75,7 +76,6 @@ Informe seu Estado Civil
         ''')
 
         menu = int(input('Qual a sua opção? '))
-
 
         if menu == 1:
 
@@ -134,7 +134,6 @@ Informe seu Estado Civil
             break
 
         if menu != 4:
-
             sleep(1)
 
             print(f'{" Estado Civil ":=^40}')
