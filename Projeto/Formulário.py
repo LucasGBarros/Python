@@ -4,9 +4,7 @@ print('''
 PREENCHA O FORMULÁRIO
 ''')
 
-from time import sleep
-
-menu = 0
+menu = familia = 0
 
 nome = str(input('Nome: '))
 
@@ -31,11 +29,7 @@ Em qual quadro se encaixa a sua idade?
 
         if menu == 1 or menu == 2 or menu == 3 or menu == 4 or menu == 5 or menu == 6:  # Informando Quadro de Sexo
 
-            sleep(1)
-
             print('''Ok, carregando informações...''')
-
-            sleep(2)
 
             sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]  # Utilizando métodos de String e
             # Fatiamento.
@@ -43,8 +37,6 @@ Em qual quadro se encaixa a sua idade?
             while sexo not in 'MmFf':
 
                 sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))  # Informando sexo correto
-
-            sleep(1)
 
             print(f'Sexo {sexo.upper()} registrado com sucesso.')
 
@@ -54,17 +46,11 @@ Em qual quadro se encaixa a sua idade?
 
             print('Opção inválida! Tente novamente!')
 
-    sleep(1)
-
     menu = 0
 
     while menu != 4:
 
-        sleep(1)
-
         print(f'{" Estado Civil ":=^40}')
-
-        sleep(1)
 
         print('''
 Informe seu Estado Civil
@@ -79,11 +65,7 @@ Informe seu Estado Civil
 
         if menu == 1:
 
-            sleep(1)
-
             print('Carregando dados...')
-
-            sleep(1)
 
             menu = 'Solteiro'
 
@@ -93,11 +75,7 @@ Informe seu Estado Civil
 
         elif menu == 2:
 
-            sleep(1)
-
             print('Carregando dados...')
-
-            sleep(1)
 
             menu = 'Casado'
 
@@ -107,11 +85,7 @@ Informe seu Estado Civil
 
         elif menu == 3:
 
-            sleep(1)
-
             print('Carregando dados...')
-
-            sleep(1)
 
             menu = 'Divorciado'
 
@@ -121,11 +95,7 @@ Informe seu Estado Civil
 
         elif menu == 4:
 
-            sleep(1)
-
             print('Carregando dados...')
-
-            sleep(1)
 
             menu = 'Viúvo'
 
@@ -134,11 +104,8 @@ Informe seu Estado Civil
             break
 
         if menu != 4:
-            sleep(1)
 
             print(f'{" Estado Civil ":=^40}')
-
-            sleep(1)
 
             print("""
 Informe seu Estado Civil
@@ -151,4 +118,14 @@ Informe seu Estado Civil
 
         menu = int(input('Qual a sua opção? '))
 
-    break
+    familia = 0
+
+    while familia != 4:
+
+        print('''Quantas pessoas moram com você? 
+    
+[1] Moro Sozinho(a).
+[2] Uma a Três.
+[3] Quatro a Sete.
+[4] Oito ou Mais
+''')
