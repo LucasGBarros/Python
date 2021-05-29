@@ -6,9 +6,10 @@ PREENCHA O FORMULÁRIO
 
 menu = familia = 0
 
-nome = str(input('Nome: '))
 
 while True:
+
+    nome = str(input('Nome: '))
 
     while menu != 6:
 
@@ -29,8 +30,6 @@ Em qual quadro se encaixa a sua idade?
 
         if menu == 1 or menu == 2 or menu == 3 or menu == 4 or menu == 5 or menu == 6:  # Informando Quadro de Sexo
 
-            print('''Ok, carregando informações...''')
-
             sexo = str(input('Informe seu sexo: [M/F] ')).strip().upper()[0]  # Utilizando métodos de String e
             # Fatiamento.
 
@@ -38,7 +37,7 @@ Em qual quadro se encaixa a sua idade?
 
                 sexo = str(input('Dados inválidos, digite novamente seu sexo: [M/F] '))  # Informando sexo correto
 
-            print(f'Sexo {sexo.upper()} registrado com sucesso.')
+                print(f'Sexo {sexo.upper()} registrado com sucesso.')
 
             break
 
@@ -65,8 +64,6 @@ Informe seu Estado Civil
 
         if menu == 1:
 
-            print('Carregando dados...')
-
             menu = 'Solteiro'
 
             print(f'Seu Estado Civil {menu} foi registrado com sucesso.')
@@ -74,8 +71,6 @@ Informe seu Estado Civil
             break
 
         elif menu == 2:
-
-            print('Carregando dados...')
 
             menu = 'Casado'
 
@@ -85,8 +80,6 @@ Informe seu Estado Civil
 
         elif menu == 3:
 
-            print('Carregando dados...')
-
             menu = 'Divorciado'
 
             print(f'Seu Estado Civil {menu} foi registrado com sucesso.')
@@ -94,8 +87,6 @@ Informe seu Estado Civil
             break
 
         elif menu == 4:
-
-            print('Carregando dados...')
 
             menu = 'Viúvo'
 
@@ -129,3 +120,23 @@ Informe seu Estado Civil
 [3] Quatro a Sete.
 [4] Oito ou Mais
 ''')
+
+        familia = int(input('Qual sua opção? '))
+
+        if familia == 1:
+
+            menu = 'Moro Sozinho'
+
+        elif familia == 2:
+
+            menu = 'Uma a Três'
+
+        elif familia == 3:
+
+            menu = 'Quatro a Sete'
+
+        elif familia == 4:
+
+            menu = 'Oito ou Mais'
+
+        break
