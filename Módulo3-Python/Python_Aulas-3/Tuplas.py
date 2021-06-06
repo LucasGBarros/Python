@@ -144,3 +144,5 @@ pessoa = ('Lucas', 21, 'M', 99.88)
 # del(pessoa) # "APAGANDO" uma váriavel
 
 print(pessoa)
+
+print(sorted(lanche))
