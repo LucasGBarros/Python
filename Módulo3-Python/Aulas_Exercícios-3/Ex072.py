@@ -29,7 +29,3 @@ while resp in 'S':
         print('Fim do Programa!')
 
         break
-
-    else:
-
-        print('Dados inválidos, fim do programa!')
