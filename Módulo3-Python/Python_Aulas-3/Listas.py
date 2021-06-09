@@ -145,11 +145,11 @@ valores.append(4)
 
 """for v in valores:
 
-    print(f'{v}...', end='')"""
+    print(f'{v}...', end='')""" # adicionando append no print
 
-for c, v in enumerate(valores):
+for c, v in enumerate(valores): # c = indice / v = valor
 
-    print(f'na posiçao {c} encontrei o valor {v}!')
+    print(f'na posiçao {c} encontrei o valor {v}!') # indice (c) posição do valor (v) e recebe o valor (v)
 
 print('Cheguei ao final da lista.')
 
