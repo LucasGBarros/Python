@@ -38,7 +38,7 @@ while menu != 5:
 
     elif menu == 2:
 
-        mult = n1 + n2
+        mult = n1 * n2
 
         print('A multiplicação entre {:.0f} x {:.0f} é {:.0f}'.format(n1, n2, mult))
 
