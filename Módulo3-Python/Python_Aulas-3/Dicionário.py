@@ -179,3 +179,5 @@ for e in brasil:
         print(v, end= ' ')
 
     print()
+
+# A função [:] serve para incluir uma lista dentro do Dicionário
