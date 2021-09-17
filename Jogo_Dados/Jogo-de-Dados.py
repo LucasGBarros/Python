@@ -1,30 +1,29 @@
 import random
 from tkinter import *
 
+
 class DiceRoller(object):
 
     def __init__(self, master):
-
         frame = Frame(master)
 
         frame.pack()
 
-        self.label = Label(master, font = ("times", 200))
+        self.label = Label(master, font=("times", 200))
 
-        button = Button(master, text="Rolar Dados", command = self.roll)
+        button = Button(master, text="Rolar Dados", command=self.roll)
 
-        button.place(x = 200, y = 0)
+        button.place(x=200, y=0)
 
     def roll(self):
-
         symbols = ["\u2680", "\u2681", "\u2862", "\u2863", "\u2864", "\u2865"]
 
-        self.label.config(text = f'{random.choice(symbols)}{random.choice(symbols)}')
+        self.label.config(text=f'{random.choice(symbols)}{random.choice(symbols)}')
 
         self.label.pack()
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     root = Tk()
 
     root.title("Jogo de Dados")
