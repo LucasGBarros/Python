@@ -17,14 +17,10 @@ def escreva(msg):
     tam = len(msg)
 
     print('~' * tam)
-
     print(msg)
-
     print('~' * tam)
 
 
 escreva('Curso Em Video')
-
 escreva('Aulas de Python')
-
 escreva('Lucas')
