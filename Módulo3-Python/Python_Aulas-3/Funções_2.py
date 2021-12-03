@@ -126,3 +126,26 @@ print(soma(9, 1))
 # Ou pode ser utiizado desta forma
 
 print(f'A soma dos valores foram {r1}, {r2} e {r3}')
+
+
+# Exemplos de Exercícios
+
+def par(n=0):
+
+    if n % 2 == 0:
+
+        return True
+
+    else:
+
+        return False
+
+num = int(input('Digite um número: '))
+
+if par(num):
+
+    print('É par!')
+
+else:
+
+    print('Não é par!')
